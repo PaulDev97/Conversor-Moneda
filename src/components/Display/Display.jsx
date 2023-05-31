@@ -27,11 +27,11 @@ const Display = () => {
         <ChangeBtnMoney>
 
           <ButtonCountry  selected={type_money === 'EEUU'} onClick={() => dispatch(changeMoney('EEUU'))}>
-            Estados Unidos
+          <img src="../img/eeuu.png" alt="" />
           </ButtonCountry >
 
           <ButtonCountry  selected={type_money === 'Argentina'} onClick={() => dispatch(changeMoney('Argentina'))}>
-            Argentina
+            <img src="../img/argentina.png" alt="" />
           </ButtonCountry >
 
         </ChangeBtnMoney> 

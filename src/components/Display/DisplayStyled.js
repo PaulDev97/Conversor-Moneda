@@ -6,29 +6,24 @@ export const DisplayContainer = styled.div `
   justify-content: center;
   align-items: center;
   gap: 10px;
-`
-
-export const Input = styled.div `
-
-  border-radius: 10px;
-  width: 200px;
-  background: #121212;
-  box-shadow: inset -21px -21px 43px #0f0f0f,
-            inset 21px 21px 43px #151515;
-
-  color: white;
-  
-  padding: 10px 5px;
-  display: flex;
-  justify-content: end;
-  
-  border: 2px groove ${({selected}) => selected ? 'orange': '#182334'};
   
 `
+
 
 export const ButtonCountry = styled.button `
   padding: 10px 20px;
   border-radius:10px;
   cursor: pointer;
-  border: 2px groove ${({selected}) => selected ? 'orange': '#182334'};
+  background-color:#182334 ;
+  border: 3px solid ${({selected}) => selected ? '#ffb224': 'black'};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  img {
+    width: 80%;
+    height: 80%;
+    
+  }
 `

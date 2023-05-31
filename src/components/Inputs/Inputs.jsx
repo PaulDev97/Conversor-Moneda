@@ -1,7 +1,7 @@
 import React from 'react'
-import { Input } from '../Display/DisplayStyled'
+
 import {  useSelector } from 'react-redux'
-import { BoxInputs } from './InputsStyled'
+import { BoxInputs, Input } from './InputsStyled'
 
 
 const Inputs = () => {
@@ -34,16 +34,15 @@ const Inputs = () => {
 
   return (
     <>
-    
-        {
+      {
 
-          type_money === 'EEUU' 
+         type_money === 'EEUU' 
 
-          ?   <BoxInputs>
+          ?<BoxInputs>
           <Input  selected={type_money === 'EEUU'}>{ displayNumber.length ? `$${numbers}` : '$0.00'}</Input> 
           <Input>{ displayNumber.length ? Conversion(type_money) : '$0.00' }</Input>
+          </BoxInputs>
 
-         </BoxInputs>
           
           
   
