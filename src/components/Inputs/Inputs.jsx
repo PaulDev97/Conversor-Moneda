@@ -28,8 +28,6 @@ const Inputs = () => {
   
 
 
-  console.log(type_money)
-
 
 
   return (

@@ -16,33 +16,27 @@ const Display = () => {
  
   return (
 
-    <>
-      <div>
-        <span>Dolar Blue: $488</span>
-        <span>Dolar estadounidense: $0.0042</span>
-      </div>
-    
-      <DisplayContainer>
+    <DisplayContainer>
 
-        <ChangeBtnMoney>
+      <ChangeBtnMoney>
 
-          <ButtonCountry  selected={type_money === 'EEUU'} onClick={() => dispatch(changeMoney('EEUU'))}>
+        <ButtonCountry  selected={type_money === 'EEUU'} onClick={() => dispatch(changeMoney('EEUU'))}>
           <img src="../img/eeuu.png" alt="" />
-          </ButtonCountry >
+        </ButtonCountry >
 
-          <ButtonCountry  selected={type_money === 'Argentina'} onClick={() => dispatch(changeMoney('Argentina'))}>
+        <ButtonCountry  selected={type_money === 'Argentina'} onClick={() => dispatch(changeMoney('Argentina'))}>
             <img src="../img/argentina.png" alt="" />
-          </ButtonCountry >
+        </ButtonCountry >
 
-        </ChangeBtnMoney> 
+      </ChangeBtnMoney> 
 
-        <Inputs/>
+      <Inputs/>
 
-      </DisplayContainer>
+    </DisplayContainer>
 
              
       
-    </>
+    
   )
 }
 

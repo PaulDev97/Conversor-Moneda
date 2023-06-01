@@ -34,6 +34,9 @@ cursor: pointer;
 
 border: 1px groove black;
 font-size: 18px;
+-webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
 `
 
 
@@ -52,13 +55,15 @@ padding: 10px 20px;
 border-radius: 10px;
 
 background: #121212;
-box-shadow: inset -21px -21px 43px #0f0f0f,
-            inset 21px 21px 43px #151515;
+
 
 color: white;
 cursor: pointer;
 border: 1px groove black;
 font-size: 18px;
+-webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);
 
 
 `
@@ -70,3 +75,5 @@ export const ChangeBtnMoney = styled.div `
 
 
 `
+
+
