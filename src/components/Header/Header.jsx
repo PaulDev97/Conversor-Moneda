@@ -1,32 +1,15 @@
-import React, { useEffect, useState } from 'react'
 import { BoxPrice, SpanBlue } from './HeaderStyled'
+import { useDollarValue } from '../../fetchApi'
 
 const Header = () => {
 
-  const [ dolarBlue , setDolarBlue] = useState([]);
-  const [ loading, setLoading ] = useState(true)
+  const { dollarBlue , loading } = useDollarValue()
 
 
-  const GetDolar = async() => {
-    const url = 'https://api.bluelytics.com.ar/v2/latest';
+  
+  let priceDollarBlue = Object.values(dollarBlue)[2]
 
-    const response = await fetch(url)
-
-    const data = await response.json()
-
-    
-    setDolarBlue([data])
-    setLoading(false)
-
-    
-    
-  }
-
-  console.log(dolarBlue)
-
-  useEffect(() => {
-    GetDolar()
-  },[])
+  
 
   return (
     <div>
@@ -36,14 +19,10 @@ const Header = () => {
         <span>Dolar estadounidense: $0.0042</span>
 
         {
-          loading && <span>Cargando</span>
+          loading ? <span>Cargando... 🔥</span> : <span>Dolar blue: ${priceDollarBlue}</span>
         }
-        {
-          dolarBlue?.map((item) => (
-             <span>Dolar blue: ${item.blue.value_buy}</span>
-          ))
-          
-        }
+      
+        
         
       </BoxPrice>
     </div>
