@@ -2,6 +2,7 @@ import React from 'react'
 
 import {  useSelector } from 'react-redux'
 import { BoxInputs, Input } from './InputsStyled'
+import { useDollarValue } from '../../fetchApi'
 
 
 const Inputs = () => {
@@ -12,13 +13,19 @@ const Inputs = () => {
 
   let numbers = displayNumber.join('')
 
+  const { dollarBlue } = useDollarValue()
+
+
   
+  let priceDollarBlue = Object.values(dollarBlue)[2]
+
+  console.log(priceDollarBlue)
 
   const Conversion = (money) => {
 
 
     if(money === 'EEUU'){
-      return '$' + (488  * (numbers * 1)).toFixed(2)
+      return '$' + (priceDollarBlue  * (numbers * 1)).toFixed(2)
     }
     else {
       return '$' + (0.0042 * (numbers * 1)).toFixed(2)

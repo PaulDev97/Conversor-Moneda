@@ -20,7 +20,7 @@ export const Input = styled.div `
   padding: 13px 5px;
   display: flex;
   justify-content: end;
-  
+  letter-spacing: 0.1rem;
   border: 3px solid ${({selected}) => selected ? '#ffb224': 'black'};
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 11px 1px rgba(0,0,0,0.75);

@@ -2,6 +2,12 @@ import styled from "styled-components";
 
 
 
+export const HeaderContainer = styled.header`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+`
 
 export const SpanBlue = styled.span `
   color: rgb(0,0,128);
@@ -11,6 +17,7 @@ export const SpanBlue = styled.span `
 `
 
 export const BoxPrice = styled.div `
+  width: 30%;
   display: flex;
   flex-direction: column;
   gap: 10px;

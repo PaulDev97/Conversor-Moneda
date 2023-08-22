@@ -1,4 +1,4 @@
-import { BoxPrice, SpanBlue } from './HeaderStyled'
+import { BoxPrice, HeaderContainer, SpanBlue } from './HeaderStyled'
 import { useDollarValue } from '../../fetchApi'
 
 const Header = () => {
@@ -12,11 +12,12 @@ const Header = () => {
   
 
   return (
-    <div>
+    <HeaderContainer>
       <h1>Conversor Dolar <SpanBlue>Blue</SpanBlue></h1>
+      <span>En este sitio podras encontrar el precio de la cotización del Dólar Blue en Argentina actualizado al día de hoy.</span>
 
       <BoxPrice>
-        <span>Dolar estadounidense: $0.0042</span>
+       
 
         {
           loading ? <span>Cargando... 🔥</span> : <span>Dolar blue: ${priceDollarBlue}</span>
@@ -25,7 +26,7 @@ const Header = () => {
         
         
       </BoxPrice>
-    </div>
+    </HeaderContainer>
   )
 }
 
