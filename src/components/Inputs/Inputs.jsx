@@ -19,7 +19,7 @@ const Inputs = () => {
   
   let priceDollarBlue = Object.values(dollarBlue)[2]
 
-  console.log(priceDollarBlue)
+  
 
   const Conversion = (money) => {
 

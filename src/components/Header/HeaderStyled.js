@@ -7,6 +7,8 @@ export const HeaderContainer = styled.header`
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  padding: 5px;
+  
 `
 
 export const SpanBlue = styled.span `
@@ -17,7 +19,7 @@ export const SpanBlue = styled.span `
 `
 
 export const BoxPrice = styled.div `
-  width: 30%;
+  width: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
