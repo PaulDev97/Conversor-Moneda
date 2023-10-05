@@ -28,7 +28,7 @@ const Inputs = () => {
       return '$' + (priceDollarBlue  * (numbers * 1)).toFixed(2)
     }
     else {
-      return '$' + (0.0042 * (numbers * 1)).toFixed(2)
+      return '$' + ( (numbers * 1) / priceDollarBlue ).toFixed(2)
     }
 
   }
